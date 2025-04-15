@@ -1,0 +1,19 @@
+.auth {
+  max-width: 480px;
+  width: 100%;
+  margin: 120px auto 0 auto;
+  box-shadow: 1px 1px 8px 0px rgba(0, 121, 178, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h6 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}

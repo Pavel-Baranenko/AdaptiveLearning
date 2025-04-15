@@ -1,0 +1,94 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  padding: 50px 0 0 0;
+  gap: 50px;
+  align-items: center;
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  span {
+    font-size: 48px;
+    font-weight: 500;
+    color: #0079B2;
+  }
+
+  p {
+    font-size: 20px;
+    color: #aaa;
+  }
+}
+
+.info {
+  margin-right: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  strong {
+    font-size: 18px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 121, 178, 0.2);
+    padding-bottom: 10px;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 121, 178, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.inner {
+  display: flex;
+  gap: 10px;
+
+  button {
+    border-radius: 10px;
+    height: 50px;
+  }
+}
+
+
+.settings {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 1px 1px 8px 0px rgba(0, 121, 178, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .last {
+    margin-top: 40px;
+  }
+}
