@@ -13,8 +13,6 @@ export default function Test({ test }) {
     setChecked(Array.from(new Set(temp)))
   }
 
-  let a = [1, 2, 3, 4, 5]
-
   const q = useId()
 
   const renderQuestion = (question, i) => {

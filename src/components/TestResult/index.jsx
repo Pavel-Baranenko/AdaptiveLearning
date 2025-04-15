@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useId } from 'react'
+import React from 'react'
 import styles from './index.module.scss'
 import Link from 'next/link'
 

@@ -7,14 +7,6 @@ export default async function CoursePage({ params }) {
   let list = [
     {
       id: 1,
-      theme: 'Business communication',
-      author: 'Department of Documentation and Language Communication',
-      keywords: [],
-      modules: [],
-      points: 10
-    },
-    {
-      id: 2,
       theme: 'Progmramming Node.js',
       author: 'Digital Culture Center',
       keywords: [],
@@ -38,18 +30,17 @@ export default async function CoursePage({ params }) {
               type: "lesson"
             },
             {
-              id: 5,
+              id: 4,
               title: 'Database creation',
               type: "resource"
             },
-
             {
-              id: 14,
+              id: 5,
               title: 'User registration',
               type: "resource"
             },
             {
-              id: 15,
+              id: 6,
               title: 'Authorization using sessions',
               type: "resource"
             },
@@ -60,123 +51,42 @@ export default async function CoursePage({ params }) {
             }
           ]
         }
-      ],
-
-      // modules: [
-      //   {
-      //     title: "PHP+MySQL",
-      //     items: [
-      //       {
-      //         id: 1,
-      //         title: 'Basic Concepts of Web Applications',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 2,
-      //         title: 'Stages of Web-Oriented Information Systems Design',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 3,
-      //         title: 'Designing Physical Data Models in MySQL DBMS',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 4,
-      //         title: 'Basic SQL Language Operators',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 5,
-      //         title: 'Database Creation',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 6,
-      //         title: 'Processing PHP Requests',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 7,
-      //         title: 'PHP and MySQL Interaction',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 8,
-      //         title: 'Data Retrieval from Database',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 9,
-      //         title: 'Displaying Data from Database',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 10,
-      //         title: 'Processing POST and GET Requests',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 11,
-      //         title: 'Adding Data to Database',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 12,
-      //         title: 'Modifying Data in Database',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 12,
-      //         title: 'Deleting Data from Database',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 13,
-      //         title: 'PHP Sessions',
-      //         type: "lesson"
-      //       },
-      //       {
-      //         id: 14,
-      //         title: 'User Registration',
-      //         type: "resource"
-      //       },
-      //       {
-      //         id: 15,
-      //         title: 'Authorization Using Sessions',
-      //         type: "resource"
-      //       },
-      //       // {
-      //       //   id: 16,
-      //       //   title: 'Final Assignment',
-      //       //   type: "assign"
-      //       // },
-      //       {
-      //         id: 17,
-      //         title: 'Final Test',
-      //         type: "test"
-      //       }
-      //     ]
-      //   }
-      // ],
-      points: 26,
+      ]
     },
     {
-      id: 3,
-      theme: 'Information systems tools',
-      author: 'Stupina Maria Valeryevna',
+      id: 2,
+      theme: 'Recommended for you: Web Programming Fundamentals',
+      title: "Recommended for you: Web Programming Fundamentals",
+      author: "Auto Generated",
       keywords: [],
-      modules: [],
-      points: 75
-    },
-    {
-      id: 4,
-      theme: 'Methods and means of solving standard tasks of professional activity',
-      author: 'Department of Information Technology',
-      keywords: [],
-      modules: [],
-      points: 0
-    },
+      modules: [
+        {
+          title: "Node+MySQL",
+          items: [
+            {
+              id: 4,
+              title: 'Introduction to Database Creation',
+              type: "lesson"
+            },
+            {
+              id: 7,
+              title: 'HTML & CSS Fundamentals',
+              type: "lesson"
+            },
+            {
+              id: 8,
+              title: 'Authentication & Security Fundamentals',
+              type: "lesson"
+            },
+            {
+              id: 17,
+              title: 'Test',
+              type: "test"
+            }
+          ]
+        }
+      ]
+    }
   ]
 
   const { id } = await params;

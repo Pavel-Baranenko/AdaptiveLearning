@@ -3,9 +3,9 @@ import styles from '../index.module.scss'
 import Link from 'next/link'
 
 
-export default function CourseCard({ course, teacher }) {
+export default function CourseCard({ course, teacher, special }) {
   return (
-    <div className={styles.course}>
+    <div className={`${styles.course} ${special ? styles.special : ""}`}>
       <div className={styles.course__info}>
         <span className={styles.course__author}>{course.author}</span>
         {teacher ?

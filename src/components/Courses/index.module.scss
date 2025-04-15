@@ -35,7 +35,6 @@
 
   &__title:hover {
     color: #08618b;
-
   }
 
   &__points {
@@ -137,9 +136,58 @@
 
 .page {
   padding: 50px 0;
+  position: relative;
 
   h1 {
     font-size: 42px;
     margin: 0 0 30px 0;
+  }
+}
+
+
+.special {
+  box-shadow: 0px 0px 8px 0px rgba(37, 184, 47, 0.612);
+  background-color: rgba(37, 184, 47, 0.1);
+}
+
+.ask {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+
+  svg {
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__open {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 121, 178, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    animation: card .5s ease;
+
+    span {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    textarea {
+      margin-bottom: 20px;
+    }
   }
 }

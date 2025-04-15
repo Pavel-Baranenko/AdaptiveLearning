@@ -262,17 +262,6 @@ h2 {
 }
 
 
-.text-box {
-  padding-bottom: 50px;
-  font-size: 20px;
-}
-
-.text-box,
-.lesson-text {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .switcher {
   input {
     display: none;
@@ -491,5 +480,58 @@ h2 {
 
   100% {
     width: 100%;
+  }
+}
+
+.text-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  li,
+  p {
+    font-size: 18px;
+  }
+
+  ul+h3,
+  code+h3,
+  p+h3 {
+    margin-top: 30px;
+  }
+
+  p+p {
+    margin-top: 5px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+  }
+
+  code+code {
+    margin-top: 5px;
+  }
+
+  code {
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    background-color: rgba(0, 122, 178, 0.2);
+  }
+
+  ul+code {
+    margin-top: 15px;
+  }
+
+  p+ul {
+    margin-top: 10px;
   }
 }

@@ -1,0 +1,794 @@
+[
+  {
+    "title": "Basic Concepts of Web Applications",
+    "info": [
+      {
+        "text": "Web applications are client-server programs that run in web browsers and provide interactive services to users.",
+        "tag": "p"
+      },
+      {
+        "text": "How Web Applications Work",
+        "tag": "h3"
+      },
+      {
+        "text": "Web applications follow a request-response model between clients (browsers) and servers.",
+        "tag": "p"
+      },
+      {
+        "text": "When you visit a website, your browser sends HTTP requests to a web server, which processes them and returns HTTP responses.",
+        "tag": "p"
+      },
+      {
+        "text": "Key Components",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Client-side (Frontend): HTML, CSS, JavaScript",
+            "tag": "li"
+          },
+          {
+            "text": "Server-side (Backend): Programming languages like Python, Java, PHP",
+            "tag": "li"
+          },
+          {
+            "text": "Database: Stores application data (e.g., MySQL, MongoDB)",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Example of HTTP Request",
+        "tag": "h3"
+      },
+      {
+        "text": "GET /index.html HTTP/1.1\nHost: www.example.com",
+        "tag": "code"
+      },
+      {
+        "text": "Types of Web Applications",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Static Web Pages (basic HTML)",
+            "tag": "li"
+          },
+          {
+            "text": "Dynamic Web Apps (content changes based on user interaction)",
+            "tag": "li"
+          },
+          {
+            "text": "Single-Page Applications (SPAs like Gmail)",
+            "tag": "li"
+          },
+          {
+            "text": "Progressive Web Apps (PWAs with offline capabilities)",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Web applications have revolutionized how we interact with services online, from social media to banking systems.",
+        "tag": "p"
+      }
+    ]
+  },
+  {
+    "title": "Stages in the Design of Web-Based Information Systems",
+    "info": [
+      {
+        "text": "Web-based information systems (WBIS) are applications that run on web technologies and provide users with access to data and services through a browser. Designing such systems involves several key stages to ensure functionality, usability, and scalability.",
+        "tag": "p"
+      },
+      {
+        "text": "1. Requirements Analysis",
+        "tag": "h3"
+      },
+      {
+        "text": "The first stage involves gathering and analyzing user and business requirements. This includes understanding the system's purpose, target audience, and key functionalities.",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Identify stakeholders (users, clients, developers).",
+            "tag": "li"
+          },
+          {
+            "text": "Define functional and non-functional requirements.",
+            "tag": "li"
+          },
+          {
+            "text": "Document use cases and user stories.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "2. System Design",
+        "tag": "h3"
+      },
+      {
+        "text": "In this stage, the system architecture is planned, including database structure, user interface (UI), and backend logic.",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Choose a technology stack (e.g., frontend: HTML/CSS/JS, backend: Node.js/Python/PHP).",
+            "tag": "li"
+          },
+          {
+            "text": "Design the database schema (tables, relationships).",
+            "tag": "li"
+          },
+          {
+            "text": "Create wireframes and UI mockups.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "3. Implementation (Development)",
+        "tag": "h3"
+      },
+      {
+        "text": "The actual coding of the system takes place here, following the design specifications.",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Develop frontend components (pages, forms, interactive elements).",
+            "tag": "li"
+          },
+          {
+            "text": "Build backend services (APIs, authentication, business logic).",
+            "tag": "li"
+          },
+          {
+            "text": "Set up the database and integrate it with the backend.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "4. Testing",
+        "tag": "h3"
+      },
+      {
+        "text": "The system undergoes various tests to ensure it works as intended and is free of bugs.",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Unit testing (individual components).",
+            "tag": "li"
+          },
+          {
+            "text": "Integration testing (interaction between modules).",
+            "tag": "li"
+          },
+          {
+            "text": "User acceptance testing (UAT) with real users.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "5. Deployment and Maintenance",
+        "tag": "h3"
+      },
+      {
+        "text": "The system is deployed to a live environment and maintained over time.",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Deploy to a web server or cloud platform (AWS, Azure, etc.).",
+            "tag": "li"
+          },
+          {
+            "text": "Monitor performance and fix issues.",
+            "tag": "li"
+          },
+          {
+            "text": "Update features and security patches as needed.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Conclusion",
+        "tag": "h3"
+      },
+      {
+        "text": "Designing a web-based information system is a structured process that requires careful planning, execution, and continuous improvement to meet user needs effectively.",
+        "tag": "p"
+      }
+    ]
+  },
+  {
+    "title": "Designing Physical Data Models in MySQL DBMS",
+    "info": [
+      {
+        "text": "A physical data model defines how data is stored, organized, and accessed in a database management system like MySQL.",
+        "tag": "p"
+      },
+      {
+        "text": "Key Concepts of Physical Data Modeling",
+        "tag": "h3"
+      },
+      {
+        "text": "The physical data model translates the logical design into a database-specific implementation, considering storage, indexing, and performance.",
+        "tag": "p"
+      },
+      {
+        "text": "Tables become actual database tables, attributes become columns, and relationships are enforced using foreign keys.",
+        "tag": "p"
+      },
+      {
+        "text": "MySQL Storage Engines",
+        "tag": "h3"
+      },
+      {
+        "text": "MySQL supports different storage engines that affect how data is physically stored:",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "InnoDB (default): Supports transactions, row-level locking, and foreign keys",
+            "tag": "li"
+          },
+          {
+            "text": "MyISAM: Simple engine with good read performance but no transaction support",
+            "tag": "li"
+          },
+          {
+            "text": "MEMORY: Stores data in memory for fast access but loses data on restart",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "CREATE TABLE example (id INT PRIMARY KEY, name VARCHAR(50)) ENGINE=InnoDB;",
+        "tag": "code"
+      },
+      {
+        "text": "Indexing Strategies",
+        "tag": "h3"
+      },
+      {
+        "text": "Proper indexing is crucial for query performance in physical data models:",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Primary keys are automatically indexed",
+            "tag": "li"
+          },
+          {
+            "text": "Create indexes on frequently queried columns",
+            "tag": "li"
+          },
+          {
+            "text": "Consider composite indexes for multi-column queries",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "CREATE INDEX idx_name ON customers(last_name, first_name);",
+        "tag": "code"
+      },
+      {
+        "text": "Data Types and Storage Optimization",
+        "tag": "h3"
+      },
+      {
+        "text": "Choosing appropriate data types affects storage efficiency and performance:",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Use INT for whole numbers, DECIMAL for precise decimals",
+            "tag": "li"
+          },
+          {
+            "text": "VARCHAR for variable-length strings, CHAR for fixed-length",
+            "tag": "li"
+          },
+          {
+            "text": "Consider ENUM for columns with a limited set of values",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Best Practices for Physical Design",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Normalize tables to reduce redundancy",
+            "tag": "li"
+          },
+          {
+            "text": "Denormalize selectively for performance-critical queries",
+            "tag": "li"
+          },
+          {
+            "text": "Consider partitioning for very large tables",
+            "tag": "li"
+          },
+          {
+            "text": "Plan for future growth and maintenance",
+            "tag": "li"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Introduction to Database Creation",
+    "info": [
+      {
+        "text": "Database creation is a fundamental skill for developers and data professionals. It involves designing, implementing, and managing structured data storage systems.",
+        "tag": "p"
+      },
+      {
+        "text": "What is Database Creation?",
+        "tag": "h3"
+      },
+      {
+        "text": "Database creation refers to the process of defining and setting up a database schema, tables, relationships, and constraints to store and organize data efficiently.",
+        "tag": "p"
+      },
+      {
+        "text": "Key Steps in Database Creation",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Requirement Analysis: Understand data needs and business logic.",
+            "tag": "li"
+          },
+          {
+            "text": "Conceptual Design: Create an Entity-Relationship (ER) model.",
+            "tag": "li"
+          },
+          {
+            "text": "Logical Design: Convert ER diagrams to tables with keys and relationships.",
+            "tag": "li"
+          },
+          {
+            "text": "Physical Implementation: Write SQL to create the database schema.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Example: Creating a Simple Database",
+        "tag": "h3"
+      },
+      {
+        "text": "CREATE DATABASE company_db;",
+        "tag": "code"
+      },
+      {
+        "text": "USE company_db;",
+        "tag": "code"
+      },
+      {
+        "text": "CREATE TABLE employees (id INT PRIMARY KEY, name VARCHAR(100), department VARCHAR(50));",
+        "tag": "code"
+      },
+      {
+        "text": "Best Practices",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Normalize data to reduce redundancy.",
+            "tag": "li"
+          },
+          {
+            "text": "Use appropriate data types (e.g., INT, VARCHAR, DATE).",
+            "tag": "li"
+          },
+          {
+            "text": "Define primary and foreign keys for integrity.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "https://example.com/database-schema-example.png",
+        "tag": "img"
+      },
+      {
+        "text": "Database creation is the foundation for efficient data management. Mastering it ensures scalable and maintainable systems.",
+        "tag": "p"
+      }
+    ]
+  },
+  {
+    "title": "User Registration: Principles and Implementation",
+    "info": [
+      {
+        "text": "User registration is a fundamental process in web and application development, allowing users to create accounts and access personalized features.",
+        "tag": "p"
+      },
+      {
+        "text": "Why User Registration Matters",
+        "tag": "h3"
+      },
+      {
+        "text": "Registration systems enable personalized experiences, secure authentication, and data persistence for users.",
+        "tag": "p"
+      },
+      {
+        "text": "A well-designed registration process improves user retention and trust.",
+        "tag": "p"
+      },
+      {
+        "text": "Key Components of Registration",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Username & Password (or email-based login)",
+            "tag": "li"
+          },
+          {
+            "text": "Email verification or OTP confirmation",
+            "tag": "li"
+          },
+          {
+            "text": "Password strength validation",
+            "tag": "li"
+          },
+          {
+            "text": "Error handling (e.g., duplicate usernames)",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Example: Simple Registration Form in HTML",
+        "tag": "h3"
+      },
+      {
+        "text": "<form action=\"/register\" method=\"POST\">\n  <input type=\"text\" name=\"username\" placeholder=\"Username\" required>\n  <input type=\"email\" name=\"email\" placeholder=\"Email\" required>\n  <input type=\"password\" name=\"password\" placeholder=\"Password\" required>\n  <button type=\"submit\">Register</button>\n</form>",
+        "tag": "code"
+      },
+      {
+        "text": "Security Considerations",
+        "tag": "h3"
+      },
+      {
+        "text": "Always hash passwords (e.g., using bcrypt) before storing them in databases.",
+        "tag": "p"
+      },
+      {
+        "text": "Implement CSRF protection and rate limiting to prevent abuse.",
+        "tag": "p"
+      },
+      {
+        "url": "https://miro.medium.com/v2/resize:fit:1400/1*Q8Jvj4X6jQ7QJZQ7QJZQ7Q.png",
+        "tag": "img"
+      },
+      {
+        "text": "Further Reading",
+        "tag": "h3"
+      },
+      {
+        "text": "Explore OAuth 2.0 and social login integrations for seamless registration.",
+        "tag": "p"
+      }
+    ]
+  },
+  {
+    "title": "Authorization Using Sessions",
+    "info": [
+      {
+        "text": "Session-based authorization is a common method for managing user authentication in web applications.",
+        "tag": "p"
+      },
+      {
+        "text": "What is Session-Based Authorization?",
+        "tag": "h3"
+      },
+      {
+        "text": "Session-based authorization relies on server-side storage of user authentication data. When a user logs in, the server creates a unique session ID, which is stored in a cookie or passed via tokens.",
+        "tag": "p"
+      },
+      {
+        "text": "Sessions help maintain user state across multiple HTTP requests, allowing the server to recognize authenticated users.",
+        "tag": "p"
+      },
+      {
+        "text": "How Sessions Work",
+        "tag": "h3"
+      },
+      {
+        "text": "1. User logs in with credentials (e.g., username and password).",
+        "tag": "li"
+      },
+      {
+        "text": "2. Server verifies credentials and creates a session stored in a database or cache.",
+        "tag": "li"
+      },
+      {
+        "text": "3. A session ID is sent back to the client (usually as a cookie).",
+        "tag": "li"
+      },
+      {
+        "text": "4. Subsequent requests include the session ID, allowing the server to validate the user.",
+        "tag": "li"
+      },
+      {
+        "text": "Example: Express.js Session Setup",
+        "tag": "h3"
+      },
+      {
+        "text": "const express = require('express');\nconst session = require('express-session');\n\nconst app = express();\n\napp.use(session({\n  secret: 'your_secret_key',\n  resave: false,\n  saveUninitialized: true,\n  cookie: { secure: true }\n}));",
+        "tag": "code"
+      },
+      {
+        "url": "https://miro.medium.com/v2/resize:fit:1200/1*Y9PFeh6QZxXdOzKuxk3h5w.png",
+        "tag": "img"
+      },
+      {
+        "text": "Advantages of Session-Based Auth",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Secure: Session data is stored server-side.",
+            "tag": "li"
+          },
+          {
+            "text": "Flexible: Sessions can store additional user data.",
+            "tag": "li"
+          },
+          {
+            "text": "Easy to invalidate: Sessions can be destroyed on logout.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Disadvantages",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Server overhead: Sessions require storage.",
+            "tag": "li"
+          },
+          {
+            "text": "Scalability issues: Storing sessions in memory can be problematic for distributed systems.",
+            "tag": "li"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "HTML & CSS Fundamentals",
+    "info": [
+      {
+        "text": "HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core technologies for building web pages.",
+        "tag": "p"
+      },
+      {
+        "text": "What is HTML?",
+        "tag": "h3"
+      },
+      {
+        "text": "HTML provides the structure of a webpage, defining elements like headings, paragraphs, and links.",
+        "tag": "p"
+      },
+      {
+        "text": "Basic HTML structure:",
+        "tag": "code",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Page Title</title>\n</head>\n<body>\n  <h1>Heading</h1>\n  <p>Paragraph text.</p>\n</body>\n</html>"
+      },
+      {
+        "text": "What is CSS?",
+        "tag": "h3"
+      },
+      {
+        "text": "CSS controls the visual presentation of HTML elements, including layout, colors, and fonts.",
+        "tag": "p"
+      },
+      {
+        "text": "Example of CSS styling:",
+        "tag": "code",
+        "code": "body {\n  font-family: Arial, sans-serif;\n  background-color: #f0f0f0;\n}\nh1 {\n  color: #0066cc;\n}"
+      },
+      {
+        "text": "Key Differences Between HTML and CSS",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "HTML defines content structure.",
+            "tag": "li"
+          },
+          {
+            "text": "CSS styles and formats the content.",
+            "tag": "li"
+          },
+          {
+            "text": "HTML uses tags like <h1>, <p>, <div>.",
+            "tag": "li"
+          },
+          {
+            "text": "CSS uses selectors and properties like color, margin, font-size.",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "How HTML and CSS Work Together",
+        "tag": "h3"
+      },
+      {
+        "text": "HTML and CSS are linked either internally (inside the HTML file) or externally (via a separate .css file).",
+        "tag": "p"
+      },
+      {
+        "text": "Example of linking an external CSS file:",
+        "tag": "code",
+        "code": "<head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>"
+      },
+      {
+        "url": "https://www.w3schools.com/html/img_html.png",
+        "tag": "img",
+        "alt": "HTML Structure Example"
+      },
+      {
+        "text": "CSS Box Model",
+        "tag": "h3"
+      },
+      {
+        "text": "Every HTML element is treated as a box with content, padding, borders, and margins.",
+        "tag": "p"
+      },
+      {
+        "url": "https://www.w3schools.com/css/box-model.png",
+        "tag": "img",
+        "alt": "CSS Box Model Diagram"
+      },
+      {
+        "text": "Conclusion",
+        "tag": "h3"
+      },
+      {
+        "text": "Mastering HTML and CSS is essential for web development. HTML structures content, while CSS makes it visually appealing.",
+        "tag": "p"
+      }
+    ]
+  },
+  {
+    "title": "Authentication & Security Fundamentals",
+    "info": [
+      {
+        "text": "Authentication and security are critical aspects of modern software systems, ensuring that only authorized users can access sensitive data and functionality.",
+        "tag": "p"
+      },
+      {
+        "text": "What is Authentication?",
+        "tag": "h3"
+      },
+      {
+        "text": "Authentication is the process of verifying the identity of a user, device, or system before granting access to resources.",
+        "tag": "p"
+      },
+      {
+        "text": "Common Authentication Methods",
+        "tag": "h3"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Password-based authentication",
+            "tag": "li"
+          },
+          {
+            "text": "Multi-Factor Authentication (MFA)",
+            "tag": "li"
+          },
+          {
+            "text": "Biometric authentication (fingerprint, facial recognition)",
+            "tag": "li"
+          },
+          {
+            "text": "Token-based authentication (JWT, OAuth)",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Security Best Practices",
+        "tag": "h3"
+      },
+      {
+        "text": "To protect systems from unauthorized access, follow these security principles:",
+        "tag": "p"
+      },
+      {
+        "tag": "ul",
+        "points": [
+          {
+            "text": "Use strong, hashed passwords (never store plaintext passwords)",
+            "tag": "li"
+          },
+          {
+            "text": "Implement HTTPS to encrypt data in transit",
+            "tag": "li"
+          },
+          {
+            "text": "Apply the principle of least privilege (grant minimal required access)",
+            "tag": "li"
+          },
+          {
+            "text": "Regularly update dependencies to patch vulnerabilities",
+            "tag": "li"
+          }
+        ]
+      },
+      {
+        "text": "Example: Secure Password Hashing in Python",
+        "tag": "h3"
+      },
+      {
+        "text": "import bcrypt\n\n# Hash a password\npassword = b'securepassword123'\nsalt = bcrypt.gensalt()\nhashed = bcrypt.hashpw(password, salt)\n\n# Verify a password\nif bcrypt.checkpw(password, hashed):\n    print('Authentication successful')",
+        "tag": "code"
+      },
+      {
+        "text": "Conclusion",
+        "tag": "h3"
+      },
+      {
+        "text": "Proper authentication and security measures are essential to protect user data and prevent breaches. Always stay updated with the latest security trends and vulnerabilities.",
+        "tag": "p"
+      }
+    ]
+  }
+]
