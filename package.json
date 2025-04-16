@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build-no-cache": "next build --no-cache",
     "start": "next start",
+    "clean": "rm -rf .next/cache",
     "lint": "next lint"
   },
   "dependencies": {
